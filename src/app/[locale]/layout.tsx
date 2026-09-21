@@ -1,6 +1,7 @@
 export const revalidate = 60
 
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { Header } from '@/components/layout/Header'
@@ -139,6 +140,13 @@ export default async function LocaleLayout({
           <PopupManager popup={popup ?? null} locale={locale} />
         </NextIntlClientProvider>
         <AnalyticsScripts />
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6aaf0dcd360c1f2797bd2303"
+          data-source="WEB_USER"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
