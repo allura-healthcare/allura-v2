@@ -143,7 +143,7 @@ export default async function LocaleLayout({
         <Script
           src="https://widgets.leadconnectorhq.com/loader.js"
           data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="6aaf0dcd360c1f2797bd2303"
+          data-widget-id="6a8e03049dfb96f929b860a9"
           data-source="WEB_USER"
           strategy="afterInteractive"
         />
